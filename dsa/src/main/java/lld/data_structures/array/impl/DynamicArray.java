@@ -1,4 +1,4 @@
-package lld.data_structures.array;
+package lld.data_structures.array.impl;
 
 public class DynamicArray {
     private int size;

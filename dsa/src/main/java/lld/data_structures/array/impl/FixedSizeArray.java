@@ -1,4 +1,4 @@
-package lld.data_structures.array;
+package lld.data_structures.array.impl;
 
 // FixedSizeArray aka Stack
 public class FixedSizeArray {
