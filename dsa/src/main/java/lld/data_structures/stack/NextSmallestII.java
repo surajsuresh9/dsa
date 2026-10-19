@@ -5,15 +5,16 @@ import java.util.Stack;
 
 public class NextSmallestII {
     public static void main(String[] args) {
-        int[] a = {4, 8, 5, 2, 25};
+//        int[] a = {4, 8, 5, 2, 25};
+        int[] a = {60, 20, 50, 40, 10, 50, 60};
         System.out.println("a: " + Arrays.toString(a));
         System.out.println("res: " + Arrays.toString(getNextSmallestElement(a)));
     }
 
     static int[] getNextSmallestElement(int[] a) {
+        Stack<Integer> stck = new Stack<>();
         int[] res = new int[a.length];
         Arrays.fill(res, -1);
-        Stack<Integer> stck = new Stack<>();
 
         for (int i = a.length - 1; i >= 0; i--) {
             while (!stck.isEmpty() && stck.peek() >= a[i]) {
