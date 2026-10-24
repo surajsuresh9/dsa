@@ -28,7 +28,7 @@ public class Queue {
     // Add an element to the rear of the queue (enqueue)
     void enqueue(int el) {
         if (isFull()) {
-            System.out.println("Queue is full");
+            System.out.println("Queue_Array is full");
             return;
         }
         rear = rear + 1 % capacity;
@@ -39,7 +39,7 @@ public class Queue {
     // Move an element from the front (dequeue)
     int dequeue() {
         if (isEmpty()) {
-            System.out.println("Queue is empty");
+            System.out.println("Queue_Array is empty");
             return -1;
         }
         front = (front + 1) % capacity;
@@ -50,7 +50,7 @@ public class Queue {
 
     int peek() {
         if (isEmpty()) {
-            System.out.println("Queue is empty");
+            System.out.println("Queue_Array is empty");
             return -1;
         }
         return arr[front];
